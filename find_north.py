@@ -1,7 +1,5 @@
 __author__ = 'dsilalahi'
 
-# find all buses that are travelling northbound of
-
 my_latitude = 41.98062
 my_longitude = -87.668452
 
