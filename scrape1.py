@@ -1,6 +1,6 @@
 import mechanize
 
-URL = 'http://www.cepstral.com/cgi-bin/demos/weather'
+URL = 'http://www.nrcs.usda.gov/wps/portal/nrcs/soilsurvey/soils/survey/state/'
 
 def main():
     # Create a Browser instance
@@ -8,14 +8,7 @@ def main():
     # Load the page
     b.open(URL)
     # Select the form
-    b.select_form(nr=0)
-    # Fill out the form
-    b['city'] = 'San Francisco'
-    b['state'] = 'CA'
-    # Verify that the voice hidden field has a value in it
-    assert b['voice']
-    # Submit!
-    return b.submit()
+
 
 if __name__ == '__main__':
     import sys
